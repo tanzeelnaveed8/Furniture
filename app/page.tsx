@@ -1,15 +1,17 @@
-import { HeroSection } from '@/components/HeroSection';
-import { FeaturedProducts } from '@/components/FeaturedProducts';
-import { CategoriesSection } from '@/components/CategoriesSection';
-import { TestimonialsSection } from '@/components/TestimonialsSection';
+'use client';
 
-export default function Home() {
+import { StrictMode } from 'react';
+
+
+import './globals.css';
+import Main from './components/main';
+
+function Home() {
   return (
-    <div className="min-h-screen">
-      <HeroSection />
-      <FeaturedProducts />
-      <CategoriesSection />
-      <TestimonialsSection />
-    </div>
+    <StrictMode>
+      <Main />
+    </StrictMode>
   );
 }
+
+export default Home;
